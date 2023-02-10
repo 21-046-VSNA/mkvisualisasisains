@@ -1,46 +1,48 @@
-function setup() {
-    //put setup code here
-    createCanvas(400,400);
-    background(120,24,120);
+function setup(){
+    ///put setup code here
+createCanvas(600,200)
+background(248,248,255)
+x1 = x2 = 60;
+x3 = 0;
+y1 = 80;
+y2 = 200;
+y3 = 0;
+rectweight = 50; 
+rectheight = 80;
 
-    x1 = 150;
-    x2 = 100;
-    x3 = 200;
 
-    y1 = 150;
-    y2 = 100;
-    y3 = 200;
-
-    lebar = 100;
-    tinggi = 100;
-
-    s = 42;
-    m = 7;
-    f = s-m;
-    k = 0;
 
 }
 
-function draw() {
-    //put drawing code here
-    line(x1,y1,x2,y2)
-    line(x3+50,y3+50,x3+100,y3+100)
-    
-    fill(0)
-    rect(x1,y1,lebar,tinggi)
-    
-    
-    fill(0,0,200)
-    ellipse(x3,y3,tinggi,lebar)
-    
-    fill(200,150,200)
-    arc(x1-100,y1,lebar,tinggi,0,2*PI*m/f)
 
-    stokeweight(2);
-    stroke(200)
-    for (var j=10; j<=29; j++){
-        xs = j
-        ys = 10+ 29 * Math.sin(PI/10)
-        Point(xs,ys)
-    }
+function draw(){
+    ///put drawing code here
+
+    line(x1,y1,x2,y2)
+    line(2*x1,y1,2*x2,y2)
+    line(3*x1,y1,3*x2,y2)
+    line(4*x1,y1,4*x2,y2)
+    line(5*x1,y1,5*x2,y2)
+    line(6*x1,y1,6*x2,y2)
+    line(7*x1,y1,7*x2,y2)
+    line(8*x1,y1,8*x2,y2)
+    line(9*x1,y1,9*x2,y2)
+    fill(0,0,0);
+    strokeCap(ROUND);
+    rect(x3,y3,rectweight,rectheight)
+    rect(55+x3,y3,rectweight,rectheight)
+    rect(2*55+x3,y3,rectweight,rectheight)
+    rect(3*55+x3,y3,rectweight,rectheight)
+    rect(4*55+x3,y3,rectweight,rectheight)
+    rect(5*55+x3,y3,rectweight,rectheight)
+    rect(6*55+x3,y3,rectweight,rectheight)
+    rect(7*55+x3,y3,rectweight,rectheight)
+    rect(8*55+x3,y3,rectweight,rectheight)
+    rect(9*55+x3,y3,rectweight,rectheight)
+    rect(10*55+x3,y3,rectweight,rectheight)
+    fill(0,0,0);
+    strokeweight(2);
+    ellipse(x2-10,y2-50,rectwieght/5,rectheight/5)
+
+
 }
